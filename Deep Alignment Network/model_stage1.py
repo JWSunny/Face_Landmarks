@@ -68,6 +68,10 @@ def DAN_stage1(meanshape):
         s1_fc2 = tf.layers.dense(s1_fc1, n_landmarks * 2)
 
         S1_Ret = s1_fc2 + meanshape   ##### 其实使用残差的思想, 得到阶段1，预测的关键点的坐标
-
         S1_cost = tf.reduce_mean(landmarks_loss(gt_labels, S1_Ret))
+        with tf.control_dependencies(tf.get_collection(tf.GraphKeys.UPDATE_OPS, 'stage1')):
+            S1_Optimizer = tf.train.AdamOptimizer(0.001).minimize(S1_cost, var_list=tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, "stage1"))
+
+    #####  返回预测的坐标值，  阶段1的损失值，
+    return S1_Ret, S1_cost, S1_Optimizer
 
