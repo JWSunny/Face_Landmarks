@@ -37,7 +37,7 @@ def LandmarkTransformLayer(Landmark, Param, Inverse=False):
 
 ''' 主要是关于DAN model的阶段2 的tensorflow实现'''
 def DAN_stage2(s2_input_features, S2_InputLandmark, S2_AffineParam, GroundTruth):
-    
+
     '''
     :param s2_input_features:   阶段2输入的总特征【相似变换后的图片、关键点热图 和 上一阶段fc1的特征】
     :param S2_InputLandmark:   阶段2变换后的关键点坐标【公式2利用该坐标，生成关键点热图】
