@@ -1,8 +1,9 @@
-# 结果展示
+## 图片测试结果展示
 ![关键点定位-01](img1.png)
 ![关键点定位-01](img2.png)  
-![video_DCNN](https://github.com/JWSunny/Face_Landmarks/blob/master/DCNN/video_DCNN.mp4
-<video src="[video_DCNN](https://github.com/JWSunny/Face_Landmarks/blob/master/DCNN/video_DCNN.mp4)" controls="" height=480 width=1280> </video>
+
+## 视频测试结果
+<https://github.com/JWSunny/Face_Landmarks/blob/master/DCNN/video_DCNN.mp4>
 
 # 主要采用 face++ 的一篇实现：Approaching human level facial landmark localization by deep learning  
 实现人脸中68关键点的定位【人脸对齐】  
