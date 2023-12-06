@@ -1,3 +1,7 @@
+# 结果展示
+![关键点定位-01](img1.png)
+![关键点定位-01](img2.png)
+
 主要采用 face++ 的一篇实现：Approaching human level facial landmark localization by deep learning
 实现人脸中68关键点的定位【人脸对齐】
 
